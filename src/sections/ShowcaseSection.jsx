@@ -71,7 +71,7 @@ const ShowcaseSection = () => {
       id: 5,
       title: "Feedback system for NEIC Website",
       description:
-        "Comprehensive project management tool with team collaboration, time tracking, and analytics.",
+        "A feedback system integrated into the NEIC website, allowing users to submit and view feedback easily. In the Admin panel, you can manage the feedbacks also can take a printout of the feedbacks.",
       images: [
         "/images/p5.png",
         "/images/p5_2.png"
