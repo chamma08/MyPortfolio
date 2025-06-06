@@ -32,7 +32,7 @@ const ShowcaseSection = () => {
       id: 2,
       title: "AI Powered AR Full Stack E-Commerce App",
       description:
-        "Revolutionary shopping experience with AI recommendations and AR try-on features.",
+        "Revolutionary shopping experience with AI recommendations, AI Assistant and AR product visualization. This is my final year project at University of Bedfordshire. It is built with MERN Stack, TailwindCSS, MongoDB, and Three.js. TensorFlow and Pytorch are used for AI features.",
       images: [
         "/images/p2.png",
         "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=500&h=300&fit=crop",
