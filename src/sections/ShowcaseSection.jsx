@@ -35,8 +35,8 @@ const ShowcaseSection = () => {
         "Revolutionary shopping experience with AI recommendations, AI Assistant and AR product visualization. This is my final year project at University of Bedfordshire. It is built with MERN Stack, TailwindCSS, MongoDB, and Three.js. TensorFlow and Pytorch are used for AI features.",
       images: [
         "/images/p2.png",
-        "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=500&h=300&fit=crop",
-        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&h=300&fit=crop"
+        "images/2_2.jpg",
+        "/images/2_3.png"
       ],
       bgColor: "bg-slate-800",
       liveUrl: "https://furni-online.vercel.app/",
@@ -48,10 +48,10 @@ const ShowcaseSection = () => {
         "A mobile web application that can capture images and share to social medias including the amazing frame",
       images: [
         "/images/p3.png",
-        "https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?w=500&h=300&fit=crop"
+        
       ],
       bgColor: "bg-gray-800",
-      liveUrl: "https://frame-capture-app.vercel.app/",
+      liveUrl: "https://captureimg.netlify.app/",
     },
     {
       id: 4,
@@ -65,7 +65,7 @@ const ShowcaseSection = () => {
         "https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?w=500&h=300&fit=crop"
       ],
       bgColor: "bg-zinc-800",
-      liveUrl: "https://apple-demo-showcase.vercel.app/",
+      liveUrl: "https://appledemonew.netlify.app/",
     },
     {
       id: 5,
