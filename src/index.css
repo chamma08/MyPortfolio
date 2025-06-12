@@ -470,3 +470,55 @@ section {
 .card:hover::before {
   opacity: 1;
 }
+
+/* Add these styles to your existing navbar CSS */
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.cv-btn {
+  background: transparent;
+  border: 2px solid currentColor;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: inherit;
+}
+
+.cv-btn:hover {
+  background-color: currentColor;
+  transform: scale(1.1);
+}
+
+.cv-btn:hover .cv-icon {
+  color: var(--background-color, #fff);
+}
+
+.cv-icon {
+  transition: color 0.3s ease;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .nav-actions {
+    gap: 0.5rem;
+  }
+  
+  .cv-btn {
+    width: 36px;
+    height: 36px;
+  }
+  
+  .cv-icon {
+    width: 16px;
+    height: 16px;
+  }
+}
