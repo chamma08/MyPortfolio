@@ -164,7 +164,7 @@ const ShowcaseSection = () => {
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">
             Featured Work
           </h1>
-          <p className="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto text-justify">
+          <p className="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto text-center">
             A collection of projects showcasing innovative solutions and
             cutting-edge technologies
           </p>
