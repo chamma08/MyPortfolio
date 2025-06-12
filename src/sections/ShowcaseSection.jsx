@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight, Github, ExternalLink } from "lucide-react";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -27,12 +27,13 @@ const ShowcaseSection = () => {
       featured: true,
       bgColor: "bg-gradient-to-br from-blue-900 to-purple-900",
       liveUrl: "https://asdcameralk.vercel.app/",
+      githubUrl: "https://github.com/chamma08/asdcameralk", 
     },
     {
       id: 2,
       title: "AI Powered AR Full Stack E-Commerce App",
       description:
-        "Revolutionary shopping experience with AI recommendations, AI Assistant and AR product visualization. This is my final year project at University of Bedfordshire. It is built with MERN Stack, TailwindCSS, MongoDB, and Three.js. TensorFlow and Pytorch are used for AI features.",
+        "My final year project at the University of Bedfordshire introduces a revolutionary shopping experience complete with AI-powered recommendations, a dedicated AI assistant, and augmented reality for product visualization. The application is built on the MERN stack and styled with Tailwind CSS, while AR functionalities are implemented using Three.js. The artificial intelligence features are powered by TensorFlow and PyTorch",
       images: [
         "/images/p2.png",
         "images/2_2.jpg",
@@ -40,6 +41,7 @@ const ShowcaseSection = () => {
       ],
       bgColor: "bg-slate-800",
       liveUrl: "https://furni-online.vercel.app/",
+      githubUrl: "https://github.com/chamma08/FurniOnline", 
     },
     {
       id: 3,
@@ -48,10 +50,10 @@ const ShowcaseSection = () => {
         "A mobile web application that can capture images and share to social medias including the amazing frame",
       images: [
         "/images/p3.png",
-        
       ],
       bgColor: "bg-gray-800",
       liveUrl: "https://captureimg.netlify.app/",
+      githubUrl: "https://github.com/yourusername/social-media-frame-capture", 
     },
     {
       id: 4,
@@ -60,12 +62,11 @@ const ShowcaseSection = () => {
         "A sleek demo app showcasing Apple products with interactive features and animations.",
       images: [
         "/images/p4.png",
-        "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=500&h=300&fit=crop",
-        "https://images.unsplash.com/photo-1586953208448-b95a79798f07?w=500&h=300&fit=crop",
-        "https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?w=500&h=300&fit=crop"
+        
       ],
       bgColor: "bg-zinc-800",
       liveUrl: "https://appledemonew.netlify.app/",
+      githubUrl: "https://github.com/yourusername/apple-demo-showcase", // Add your GitHub URL here
     },
     {
       id: 5,
@@ -78,8 +79,8 @@ const ShowcaseSection = () => {
       ],
       bgColor: "bg-neutral-800",
       liveUrl: "http://www.neic.cea.lk/feedbacks",
+      githubUrl: "https://github.com/yourusername/neic-feedback-system", // Add your GitHub URL here
     },
-    
   ];
 
   const featuredProject = projects.find((p) => p.featured);
@@ -163,7 +164,7 @@ const ShowcaseSection = () => {
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">
             Featured Work
           </h1>
-          <p className="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto">
+          <p className="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto text-justify">
             A collection of projects showcasing innovative solutions and
             cutting-edge technologies
           </p>
@@ -185,20 +186,29 @@ const ShowcaseSection = () => {
                   <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 leading-tight">
                     {featuredProject.title}
                   </h2>
-                  <p className="text-white/80 text-lg md:text-xl mb-8 leading-relaxed">
+                  <p className="text-white/80 text-lg md:text-xl mb-8 leading-relaxed text-justify">
                     {featuredProject.description}
                   </p>
                   <div className="flex flex-wrap gap-4">
-                    <button className="bg-white text-black px-6 py-3 rounded-full font-medium hover:bg-gray-100 transition-colors">
-                      View Project
-                    </button>
+                    {featuredProject.githubUrl && (
+                      <a
+                        href={featuredProject.githubUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="bg-white text-black px-6 py-3 rounded-full font-medium hover:bg-gray-100 transition-colors inline-flex items-center gap-2"
+                      >
+                        <Github size={18} />
+                        View Code
+                      </a>
+                    )}
                     {featuredProject.liveUrl && (
                       <a
                         href={featuredProject.liveUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="border border-white/30 text-white px-6 py-3 rounded-full font-medium hover:bg-white/10 transition-colors inline-block"
+                        className="border border-white/30 text-white px-6 py-3 rounded-full font-medium hover:bg-white/10 transition-colors inline-flex items-center gap-2"
                       >
+                        <ExternalLink size={18} />
                         Live Demo
                       </a>
                     )}
@@ -263,11 +273,11 @@ const ShowcaseSection = () => {
         {/* Projects Grid */}
         <div
           ref={projectGridRef}
-          className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
+          className="grid md:grid-cols-2 xl:grid-cols-3 gap-8"
         >
           {regularProjects.map((project) => (
             <div key={project.id} className="project-card group cursor-pointer">
-              <div className="bg-gray-900 rounded-2xl overflow-hidden hover:scale-105 transition-all duration-300 hover:shadow-2xl">
+              <div className="bg-gray-900 rounded-2xl overflow-hidden hover:scale-105 transition-all duration-300 hover:shadow-2xl h-full flex flex-col">
                 <div
                   className={`${project.bgColor} p-6 relative overflow-hidden group`}
                 >
@@ -328,26 +338,35 @@ const ShowcaseSection = () => {
                     )}
                   </div>
                 </div>
-                <div className="p-6">
-                  <h3 className="text-white text-xl font-semibold mb-3 line-clamp-2 group-hover:text-blue-400 transition-colors">
+                <div className="p-6 flex-1 flex flex-col">
+                  <h3 className="text-white text-xl font-semibold mb-3 group-hover:text-blue-400 transition-colors">
                     {project.title}
                   </h3>
-                  <p className="text-gray-400 text-sm mb-4 line-clamp-3">
+                  <p className="text-gray-400 text-sm mb-6 leading-relaxed flex-1 text-justify">
                     {project.description}
                   </p>
                   
-                  {/* Live Demo Link */}
-                  <div className="flex gap-3">
-                    <button className="flex-1 bg-blue-600 text-white text-sm px-4 py-2 rounded-lg font-medium hover:bg-blue-700 transition-colors">
-                      View Source Code
-                    </button>
+                  {/* Action Buttons */}
+                  <div className="flex gap-3 mt-auto">
+                    {project.githubUrl && (
+                      <a
+                        href={project.githubUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex-1 bg-blue-600 text-white text-sm px-4 py-2 rounded-lg font-medium hover:bg-blue-700 transition-colors inline-flex items-center justify-center gap-2"
+                      >
+                        <Github size={16} />
+                        View Code
+                      </a>
+                    )}
                     {project.liveUrl && (
                       <a
                         href={project.liveUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex-1 border border-gray-600 text-gray-300 text-sm px-4 py-2 rounded-lg font-medium hover:bg-gray-800 transition-colors text-center"
+                        className="flex-1 border border-gray-600 text-gray-300 text-sm px-4 py-2 rounded-lg font-medium hover:bg-gray-800 transition-colors inline-flex items-center justify-center gap-2"
                       >
+                        <ExternalLink size={16} />
                         Live Demo
                       </a>
                     )}
