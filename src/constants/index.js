@@ -259,7 +259,7 @@ const socialImgs = [
   {
     name: "linkedin",
     imgPath: "/images/linkedin.png",
-    link: "https://linkedin.com/in/your-profile"
+    link: "www.linkedin.com/in/matheesha-dissanayake"
   },
 ];
 
