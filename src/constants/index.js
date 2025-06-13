@@ -244,18 +244,22 @@ const socialImgs = [
   {
     name: "insta",
     imgPath: "/images/insta.png",
+    link: "https://instagram.com/your-username"
   },
   {
     name: "fb",
     imgPath: "/images/fb.png",
+    link: "https://facebook.com/your-profile"
   },
   {
     name: "x",
     imgPath: "/images/x.png",
+    link: "https://x.com/your-username" 
   },
   {
     name: "linkedin",
     imgPath: "/images/linkedin.png",
+    link: "https://linkedin.com/in/your-profile"
   },
 ];
 
