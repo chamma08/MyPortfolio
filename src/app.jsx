@@ -1,4 +1,3 @@
-import { BrowserRouter } from "react-router-dom";
 import Hero from "./sections/Hero";
 import ShowcaseSection from "./sections/ShowcaseSection";
 import NavBar from "./components/NavBar";
@@ -13,13 +12,13 @@ export default function App() {
     <>
       <NavBar />
       <Hero />
-      <BrowserRouter>
-        <ShowcaseSection />
-        <FeatureCards />
-        <TechStack />
-        <ExperienceSection />
-        <Contact />
-      </BrowserRouter>
+
+      <ShowcaseSection />
+      <FeatureCards />
+      <TechStack />
+      <ExperienceSection />
+      <Contact />
+
       <Footer />
     </>
   );
