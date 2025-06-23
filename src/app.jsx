@@ -15,7 +15,6 @@ const App = () => {
       <Hero />
       <BrowserRouter>
         <ShowcaseSection />
-        {/* <LogoShowcase /> */}
         <FeatureCards />
         <TechStack />
         <ExperienceSection />
