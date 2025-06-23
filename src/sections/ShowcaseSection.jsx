@@ -45,16 +45,19 @@ const ShowcaseSection = () => {
     },
     {
       id: 3,
-      title: "Social Media Frame Capture App",
-      description:
-        "A mobile web application that can capture images and share to social medias including the amazing frame",
+      title: "Sleep Tracker Next JS 15 Full Stack App",
+      description: "A full-stack, serverless sleep tracking application built with Next.js 15 typescript and PostgreSQL. SleepSync offers a dynamic dashboard with real-time data visualization, secure user authentication, and personalized sleep analytics. This project showcases a modern, scalable web architecture with a focus on user experience and data management.",
       images: [
-        "/images/p3.png",
+        "/images/6.png",
+        "/images/6_2.png",
+        "/images/6_3.png",
+        "/images/6_4.png"
       ],
-      bgColor: "bg-gray-800",
-      liveUrl: "https://captureimg.netlify.app/",
-      githubUrl: "https://github.com/yourusername/social-media-frame-capture", 
+      bgColor: "bg-gray-900",
+      liveUrl: "https://sleep-tracker-psi.vercel.app/",
+      githubUrl: "https://github.com/chamma08/sleep-tracker"
     },
+    
     {
       id: 4,
       title: "Apple Demo Showcase App",
@@ -79,22 +82,21 @@ const ShowcaseSection = () => {
       ],
       bgColor: "bg-neutral-800",
       liveUrl: "http://www.neic.cea.lk/feedbacks",
-      githubUrl: "https://github.com/yourusername/neic-feedback-system", // Add your GitHub URL here
+      githubUrl: "https://github.com/yourusername/neic-feedback-system", 
     },
     {
-      id: 6,
-      title: "Sleep Tracker",
-      description: "A full-stack, serverless sleep tracking application built with Next.js 15 typescript and PostgreSQL. SleepSync offers a dynamic dashboard with real-time data visualization, secure user authentication, and personalized sleep analytics. This project showcases a modern, scalable web architecture with a focus on user experience and data management.",
+      id:6,
+      title: "Social Media Frame Capture App",
+      description:
+        "A mobile web application that can capture images and share to social medias including the amazing frame",
       images: [
-        "/images/6.png",
-        "/images/6_2.png",
-        "/images/6_3.png",
-        "/images/6_4.png"
+        "/images/p3.png",
       ],
-      bgColor: "bg-gray-900",
-      liveUrl: "https://sleep-tracker-psi.vercel.app/",
-      githubUrl: "https://github.com/chamma08/sleep-tracker"
-    }
+      bgColor: "bg-gray-800",
+      liveUrl: "https://captureimg.netlify.app/",
+      githubUrl: "https://github.com/yourusername/social-media-frame-capture", 
+    },
+    
   ];
 
   const featuredProject = projects.find((p) => p.featured);
