@@ -8,7 +8,7 @@ import FeatureCards from "./sections/FeatureCards";
 import Contact from "./sections/Contact";
 import Footer from "./sections/Footer";
 
-const App = () => {
+export default function App() {
   return (
     <>
       <NavBar />
@@ -18,11 +18,9 @@ const App = () => {
         <FeatureCards />
         <TechStack />
         <ExperienceSection />
-        <Contact/>
+        <Contact />
       </BrowserRouter>
       <Footer />
     </>
   );
-};
-
-export default App;
+}
