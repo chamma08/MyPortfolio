@@ -81,6 +81,20 @@ const ShowcaseSection = () => {
       liveUrl: "http://www.neic.cea.lk/feedbacks",
       githubUrl: "https://github.com/yourusername/neic-feedback-system", // Add your GitHub URL here
     },
+    {
+      id: 6,
+      title: "Sleep Tracker",
+      description: "A full-stack, serverless sleep tracking application built with Next.js 15 typescript and PostgreSQL. SleepSync offers a dynamic dashboard with real-time data visualization, secure user authentication, and personalized sleep analytics. This project showcases a modern, scalable web architecture with a focus on user experience and data management.",
+      images: [
+        "/images/6.png",
+        "/images/6_2.png",
+        "/images/6_3.png",
+        "/images/6_4.png"
+      ],
+      bgColor: "bg-gray-900",
+      liveUrl: "https://sleep-tracker-psi.vercel.app/",
+      githubUrl: "https://github.com/chamma08/sleep-tracker"
+    }
   ];
 
   const featuredProject = projects.find((p) => p.featured);
