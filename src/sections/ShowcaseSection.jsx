@@ -31,6 +31,22 @@ const ShowcaseSection = () => {
     },
     {
       id: 2,
+      title: "AI Powered Smart Notes App",
+      description:
+        "A full-stack AI-powered notes application that allows users to create, edit, and manage notes with advanced feature like AI search. Built with Next.js 15, Convex, vercel AI sdk v5 and openai api, this app provides a modern and efficient user experience.",
+      images: [
+        "/images/n_1.png",
+        "/images/n_2.png",
+        "/images/n_3.png",
+        "/images/n_4.png"
+      ],
+      bgColor: "bg-gradient-to-br from-green-900 to-blue-900",
+      liveUrl: "https://ai-notes-app-omega.vercel.app",
+      githubUrl: "https://github.com/chamma08/ai-notes-app/tree/main/convex-aisdk-rag",
+
+    },
+    {
+      id: 3,
       title: "AI Powered AR Full Stack E-Commerce App",
       description:
         "My final year project at the University of Bedfordshire introduces a revolutionary shopping experience complete with AI-powered recommendations, a dedicated AI assistant, and augmented reality for product visualization. The application is built on the MERN stack and styled with Tailwind CSS, while AR functionalities are implemented using Three.js. The artificial intelligence features are powered by TensorFlow and PyTorch",
@@ -44,7 +60,7 @@ const ShowcaseSection = () => {
       githubUrl: "https://github.com/chamma08/FurniOnline", 
     },
     {
-      id: 3,
+      id: 4,
       title: "Sleep Tracker Next JS 15 Full Stack App",
       description: "A full-stack, serverless sleep tracking application built with Next.js 15 typescript and PostgreSQL. SleepSync offers a dynamic dashboard with real-time data visualization, secure user authentication, and personalized sleep analytics. This project showcases a modern, scalable web architecture with a focus on user experience and data management.",
       images: [
@@ -59,7 +75,7 @@ const ShowcaseSection = () => {
     },
     
     {
-      id: 4,
+      id: 5,
       title: "Apple Demo Showcase App",
       description:
         "A sleek demo app showcasing Apple products with interactive features and animations.",
@@ -72,7 +88,7 @@ const ShowcaseSection = () => {
       githubUrl: "https://github.com/yourusername/apple-demo-showcase", // Add your GitHub URL here
     },
     {
-      id: 5,
+      id: 6,
       title: "Feedback system for NEIC Website",
       description:
         "A feedback system integrated into the NEIC website, allowing users to submit and view feedback easily. In the Admin panel, you can manage the feedbacks also can take a printout of the feedbacks.",
@@ -85,7 +101,7 @@ const ShowcaseSection = () => {
       githubUrl: "https://github.com/yourusername/neic-feedback-system", 
     },
     {
-      id:6,
+      id:7,
       title: "Social Media Frame Capture App",
       description:
         "A mobile web application that can capture images and share to social medias including the amazing frame",
