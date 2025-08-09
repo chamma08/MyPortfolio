@@ -26,6 +26,9 @@ const Footer = () => {
             <a href="https://github.com/chamma08" target="_blank" rel="noopener noreferrer">
               <Github className="w-6 h-6" />
             </a>
+            <a href="https://www.linkedin.com/in/matheesha-dissanayake" target="_blank" rel="noopener noreferrer">
+              <img src="/images/linkedin.png" alt="LinkedIn icon" />
+            </a>
           </div>
         </div>
         <div className="flex flex-col justify-center">
