@@ -11,29 +11,47 @@ const Footer = () => {
         <div className="socials">
           {/* Filter out X/Twitter icon and add links */}
           {socialImgs
-            .filter(socialImg => !socialImg.name?.toLowerCase().includes('x') && 
-                               !socialImg.name?.toLowerCase().includes('twitter'))
+            .filter(
+              (socialImg) =>
+                !socialImg.name?.toLowerCase().includes("x") &&
+                !socialImg.name?.toLowerCase().includes("twitter")
+            )
             .map((socialImg, index) => (
               <div key={index} className="icon">
-                <a href={socialImg.link} target="_blank" rel="noopener noreferrer">
+                <a
+                  href={socialImg.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <img src={socialImg.imgPath} alt="social icon" />
                 </a>
               </div>
             ))}
-          
+
           {/* Add GitHub icon with link */}
           <div className="icon">
-            <a href="https://github.com/chamma08" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://github.com/chamma08"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Github className="w-6 h-6" />
             </a>
-            <a href="https://www.linkedin.com/in/matheesha-dissanayake" target="_blank" rel="noopener noreferrer">
+          </div>
+          <div className="icon">
+            <a
+              href="https://www.linkedin.com/in/matheesha-dissanayake"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img src="/images/linkedin.png" alt="LinkedIn icon" />
             </a>
           </div>
         </div>
         <div className="flex flex-col justify-center">
           <p className="text-center md:text-end">
-            © {new Date().getFullYear()} Matheesha Dissanayake. All rights reserved.
+            © {new Date().getFullYear()} Matheesha Dissanayake. All rights
+            reserved.
           </p>
         </div>
       </div>
